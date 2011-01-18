@@ -20,8 +20,8 @@ ig.module(
 			ctx.rect( 
 				ig.system.getDrawPos(this.pos.x.round() - ig.game.screen.x),
 				ig.system.getDrawPos(this.pos.y.round() - ig.game.screen.y),
-				this.size.x,
-				this.size.y);
+				this.size.x * ig.system.scale,
+				this.size.y * ig.system.scale);
 			ctx.stroke();
 			ctx.closePath();
 			ctx.restore();
